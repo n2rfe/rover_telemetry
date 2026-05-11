@@ -20,7 +20,7 @@ class FakeSensorPublisher(Node):
         now = self.get_clock().now().to_msg()
         self.t += 0.1
 
-        # --- IMU ---
+        # IMU
         imu = Imu()
         imu.header.stamp    = now
         imu.header.frame_id = 'imu_link'
@@ -33,7 +33,7 @@ class FakeSensorPublisher(Node):
         imu.angular_velocity.z    = math.sin(self.t * 0.2) * 0.1
         self.imu_pub.publish(imu)
 
-        # --- Odometry ---
+        # Odometry
         odom = Odometry()
         odom.header.stamp    = now
         odom.header.frame_id = 'odom'

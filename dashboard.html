@@ -115,7 +115,7 @@ const gyroChart = makeChart('gyro-chart', [], [
   { label: 'Z', data: [], borderColor: '#a3e635', borderWidth: 1.5, pointRadius: 0, tension: 0.3 },
 ]);
 
-// --- CHANGE THIS to your Jetson's IP if accessing from another machine ---
+// 
 const BROKER_WS = 'ws://localhost:9001';
 
 const client = mqtt.connect(BROKER_WS);

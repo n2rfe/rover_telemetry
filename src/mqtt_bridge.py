@@ -6,7 +6,7 @@ import paho.mqtt.client as mqtt
 import json
 import time
 
-BROKER_HOST = 'localhost'   # change to Jetson IP if dashboard runs on another machine
+BROKER_HOST = 'localhost'   #
 BROKER_PORT = 1883
 
 class MQTTBridge(Node):
